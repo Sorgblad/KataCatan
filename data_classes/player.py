@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, name : str, surname : str, player_number : int, family : str):
+    def __init__(self, name: str, surname: str, player_number: int, family: str):
         self.name = name
         self.surname = surname
         self.player_number = player_number
@@ -37,7 +37,6 @@ class Player:
             self.success_rate += value
         else:
             self.success_rate /= value
-
 
     def is_the_same_family(self, target_player: "Player") -> bool:
         if self.family is None or target_player.family is None:
